@@ -1,5 +1,5 @@
 {% set name = "pyecharts" %}
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyecharts-{{ version }}.tar.gz
-  sha256: 14503e688d4de8560e3d41c19db1b472d9a0208e25dd860626e1e8c665d12d20
+  sha256: 664bdb6075eb585900d97204382905c958ade306b277ae68aedd310434de56ff
 
 build:
   noarch: python
@@ -33,7 +33,8 @@ test:
     - pip
 
 about:
-  description: 'Apache Echarts is easy-to-use, highly interactive and highly performant javascript visualization library under Apache license. Since its first public release in 2013, it now dominates over 74% of Chinese web front-end market. Yet Python is an expressive language and is loved by data science community. Combining the strength of both technologies, pyecharts is born.'
+  description: 'Apache Echarts is easy-to-use, highly interactive and highly performant javascript visualization library under Apache license. Since its first public release in 2013, it now dominates over 74% of Chinese web front-end market. Yet Python is an expressive language and is loved by data science community. Combining
+    the strength of both technologies, pyecharts is born.'
   dev_url: https://github.com/pyecharts/pyecharts
   doc_url: https://pyecharts.org/#/en-us/
   home: https://pyecharts.org/
