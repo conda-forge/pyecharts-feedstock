@@ -1,5 +1,5 @@
 {% set name = "pyecharts" %}
-{% set version = "2.0.6" %}
+{% set version = "2.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyecharts-{{ version }}.tar.gz
-  sha256: 4d7f8dcbee1525a6eeecab589efcdbe939feee4c46930d90b2734bff04077ecc
+  sha256: e98bc7983345c38c925929e1586dfef2c0788999ebc4660165822c1aed05eef6
 
 build:
   noarch: python
