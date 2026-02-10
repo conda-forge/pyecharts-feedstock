@@ -1,5 +1,5 @@
 {% set name = "pyecharts" %}
-{% set version = "2.0.9" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyecharts-{{ version }}.tar.gz
-  sha256: 7b4e8620809c22e32a19d613542f47ea6efa02f1189e00f91134cb5225e8f3ec
+  sha256: 077f8205390aea705b8cc0be9d0c09916a2c060e9e5c8d9c9d11b7d8f4bdc1da
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - jinja2
+    - jinja2 >=2.11.3
     - prettytable
     - simplejson
 
